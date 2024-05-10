@@ -22,7 +22,7 @@ const Product = ({ menu, item }) => {
 
             <button className='btn btn-danger  mt-3 mx-3' onClick={() =>FilterData("All")}>All</button>
             {itemMenu.map((val, index) => (
-                <button onClick={() => FilterData(val.catogry)} className='btn btn-danger mt-3 mx-3' key={index}> {val.catogry}</button>
+                <button onClick={() => FilterData(val.catogry)} className='btn btn-light mt-3 mx-3' key={index}> {val.catogry}</button>
             ))}
             <br /><br />
             <div className='container'>
@@ -34,7 +34,7 @@ const Product = ({ menu, item }) => {
                                 <div className="card-body">
                                     <h5 className="card-title mt-1">Name:- {p.name}</h5>
                                     <p className="card-text mt-2">Price:- {p.price}</p>
-                                    <button className='btn btn-danger'>Buy</button>
+                                    <button className='btn btn-success  w-100'>Buy</button>
                                 </div>
                             </div>
                         </div>
