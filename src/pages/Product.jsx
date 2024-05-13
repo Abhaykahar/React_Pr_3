@@ -29,12 +29,12 @@ const Product = ({ menu, item }) => {
                 <div className='row'>
                     {products.map((p, index) => (
                         <div key={index} className='col-lg-4'>
-                            <div className="card mt-5" style={{ width: '18rem', height: "25rem" }}>
+                            <div className="card mt-5" style={{ width: '20rem', height: "25rem" }}>
                                 <img className="card-img-top" src={p.image} alt="Product" />
                                 <div className="card-body">
                                     <h5 className="card-title mt-1">Name:- {p.name}</h5>
                                     <p className="card-text mt-2">Price:- {p.price}</p>
-                                    <button className='btn btn-success  w-100'>Buy</button>
+                                    <button className='btn btn-danger  w-100'>Buy</button>
                                 </div>
                             </div>
                         </div>
